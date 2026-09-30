@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NeuroFence - Model Sandbox
 
 NeuroFence is an offline model-forensics project designed
@@ -62,3 +63,7 @@ the model is free from backdoors.
 
 Backdoor analysis is performed by the combined
 Adversarial Fuzzer and Activation Tracker modules.
+=======
+# NeuroFence-
+offline AL security tool for detecting LLM model poisioning and backdoor anamolies using activation analysis.
+>>>>>>> 61826c07ca54fa151ee2b6cd2b37030bc5dfbc67
