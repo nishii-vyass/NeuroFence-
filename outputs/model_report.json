@@ -1,0 +1,21 @@
+{
+    "tool": "NeuroFence",
+    "module": "Model Sandbox",
+    "status": "ANALYSIS_READY",
+    "model_path": "models\\MyModel",
+    "sha256": "b3b00436d13af5c85a223d2bb77adce8ca660081973c41632a7647c70d908039",
+    "offline_mode": true,
+    "remote_code": false,
+    "metadata": {
+        "model_path": "models\\MyModel",
+        "model_type": "gpt2",
+        "parameter_count": 102714,
+        "hidden_size": 2,
+        "num_hidden_layers": 2,
+        "vocab_size": 50257,
+        "torch_dtype": "torch.float32",
+        "sha256": "b3b00436d13af5c85a223d2bb77adce8ca660081973c41632a7647c70d908039",
+        "offline_mode": true,
+        "remote_code": false
+    }
+}

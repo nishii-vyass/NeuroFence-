@@ -1,0 +1,47 @@
+{
+    "tool": "NeuroFence",
+    "purpose": "Baseline activation statistics and neuron activation energy",
+    "prompt_count": 100,
+    "layers": {
+        "transformer.h.0": {
+            "mean_activation": -0.0005703524613636546,
+            "mean_std": 0.026990612605586647,
+            "mean_absolute_activation": 0.02148554364219308,
+            "minimum_activation": -0.07182677835226059,
+            "maximum_activation": 0.07405830174684525
+        },
+        "transformer.h.1": {
+            "mean_activation": -0.0009350518113933504,
+            "mean_std": 0.027157298722304404,
+            "mean_absolute_activation": 0.021616221452131868,
+            "minimum_activation": -0.07369636744260788,
+            "maximum_activation": 0.07336155325174332
+        }
+    },
+    "neurons": {
+        "transformer.h.0": {
+            "0": {
+                "mean_energy": 0.02603669315110892,
+                "minimum_energy": 0.004108278546482325,
+                "maximum_energy": 0.041616104543209076
+            },
+            "1": {
+                "mean_energy": 0.01693439404480159,
+                "minimum_energy": 0.005136948078870773,
+                "maximum_energy": 0.030059587210416794
+            }
+        },
+        "transformer.h.1": {
+            "0": {
+                "mean_energy": 0.02566558673977852,
+                "minimum_energy": 0.004723739810287952,
+                "maximum_energy": 0.04099727421998978
+            },
+            "1": {
+                "mean_energy": 0.017566856686025856,
+                "minimum_energy": 0.0032407997641712427,
+                "maximum_energy": 0.031034916639328003
+            }
+        }
+    }
+}
