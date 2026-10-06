@@ -1,0 +1,5 @@
+{
+    "relative_threshold": 0.50,
+    "absolute_threshold": 0.005,
+    "description": "Experimental activation anomaly detection thresholds"
+}
