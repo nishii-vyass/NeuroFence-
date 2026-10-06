@@ -6,7 +6,7 @@ class BackdoorDetector:
     """
     Week 3 experimental activation anomaly detector.
 
-    It compares normal activation energy with
+    Compares normal activation energy with
     trigger-like activation energy.
 
     This is a screening method.
@@ -18,6 +18,16 @@ class BackdoorDetector:
         relative_threshold=0.50,
         absolute_threshold=0.005
     ):
+
+        if relative_threshold <= 0:
+            raise ValueError(
+                "relative_threshold must be greater than 0."
+            )
+
+        if absolute_threshold <= 0:
+            raise ValueError(
+                "absolute_threshold must be greater than 0."
+            )
 
         self.relative_threshold = relative_threshold
         self.absolute_threshold = absolute_threshold
@@ -132,6 +142,7 @@ class BackdoorDetector:
                     )
 
                 else:
+
                     relative_change = 0.0
 
                 suspicious = (

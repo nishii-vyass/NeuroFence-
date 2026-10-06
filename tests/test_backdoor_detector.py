@@ -136,3 +136,25 @@ def test_detector_accepts_similar_activations():
         ==
         "LOW"
     )
+def test_detector_rejects_invalid_relative_threshold():
+
+    try:
+        BackdoorDetector(
+            relative_threshold=0,
+            absolute_threshold=0.005
+        )
+        assert False
+    except ValueError:
+        assert True
+
+
+def test_detector_rejects_invalid_absolute_threshold():
+
+    try:
+        BackdoorDetector(
+            relative_threshold=0.50,
+            absolute_threshold=0
+        )
+        assert False
+    except ValueError:
+        assert True
